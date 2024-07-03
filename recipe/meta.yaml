@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
@@ -41,5 +41,10 @@ about:
   license_file: LICENSE.txt
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/51225
+    reason: Client request
+    recipe-maintainers:
+      - ianaobi
   recipe-maintainers:
     - FernandezMathieu
