@@ -38,8 +38,10 @@ about:
   home: https://github.com/jpmml/sklearn2pmml
   summary: Python library for converting Scikit-Learn pipelines to PMML
   license: AGPL-3.0-only
+  license_family: GPL
   license_file: LICENSE.txt
-
+  dev_url: https://github.com/jpmml/sklearn2pmml
+  doc_url: https://github.com/jpmml/sklearn2pmml/blob/master/README.md
 extra:
   anaconda-services:
     ref: https://anaconda.zendesk.com/agent/tickets/51225
